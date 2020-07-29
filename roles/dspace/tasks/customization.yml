@@ -4,7 +4,7 @@
 
 - name: brand | logo 
   copy:
-    src: "files/{{institution_name}}_{{logo}}"
+    src: "files/{{institution_name}}_{{ logo }}"
     dest: "{{ full_theme_path }}/images/logo.png"
 
 
