@@ -60,12 +60,12 @@
   tags: dspace
 
    
-#- name: dspace | Simple add EXTENSION pgcrypto;
-#  become_user: postgres
-#  postgresql_query:
-#    db: dspace
-#    query: CREATE EXTENSION pgcrypto
-#  tags: dspace
+- name: dspace | Simple add EXTENSION pgcrypto;
+  become_user: postgres
+  postgresql_query:
+    db: dspace
+    query: CREATE EXTENSION pgcrypto
+  tags: dspace
 
 
 - name: dspace | perform fresh install  using ant
