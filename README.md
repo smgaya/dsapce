@@ -15,7 +15,7 @@ A few assumptions are made:
 
 This are pre installation packages.
 
-- thi 
+- the
 
 ## Installation 
 
@@ -36,7 +36,7 @@ This is customised based on the university.
 ## Usage
 Edit the `hosts` and `host_vars` appropriately, and then test to see if ansible can reach your host:
 
-    ansible -i hosts dspace -m ping
+    ansible -i inventory/new.yml dspace.yml
 
 Then try to run the playbook:
 
@@ -83,17 +83,6 @@ sudo mvn package
     color: white;
     min-width: 1000px;
     height: 100px;
-
-
-UOA- 42
-SAUT- 43
-AIE -44
-MWEKA-45
-UOI - 46
-IRDP-49
-SIDO -Small Industries Development Organization -50
-SMMUCO -47
-DIT-51
 
 
 
