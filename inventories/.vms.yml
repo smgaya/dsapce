@@ -1,0 +1,87 @@
+inventory_name:
+    hosts:
+       41.93.33.42:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+       41.93.33.43:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+       41.93.33.44:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.45:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.46:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+       41.93.33.47:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.48:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.49:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.50:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo
+
+
+       41.93.33.51:
+          ansible_connection: ssh
+          ansible_user: repo
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 4R3PO2us3
+          ansible_become: yes
+          ansible_become_method: sudo

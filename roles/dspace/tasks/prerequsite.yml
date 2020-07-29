@@ -1,0 +1,20 @@
+---
+##
+
+# Common general deps
+- name: deps | Install some needed depenences
+  apt: 
+    pkg: "{{ dspace_dependences }}"
+    state: present 
+    install_recommends: no
+    update_cache: yes
+  become: yes
+  tags: deps
+
+# Select java 1.8 to be default 
+- name: deps | Correct java 1.8 version selected
+  alternatives:
+    name: java
+    path: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+  tags: deps
+

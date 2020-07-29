@@ -1,0 +1,7 @@
+---
+
+ansible_connection: ssh
+ansible_user: repo
+ansible_sudo_pass: 4R3PO2us3
+ansible_become: yes
+ansible_become_method: sudo

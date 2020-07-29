@@ -1,0 +1,9 @@
+inventory_name:
+    hosts:
+       196.249.68.166:
+          ansible_connection: ssh
+          ansible_user: tumarepository
+          ansible_ssh_pass: 
+          ansible_sudo_pass: 10mbote80tembo
+          ansible_become: yes
+          ansible_become_method: sudo

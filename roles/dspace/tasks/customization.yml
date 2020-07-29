@@ -1,0 +1,53 @@
+---
+#customization 
+
+
+- name: brand | logo 
+  copy:
+    src: "files/{{institution_name}}_{{logo}}"
+    dest: "{{ full_theme_path }}/images/logo.png"
+
+
+- name: brand | Favicon
+  copy:
+    src: "files/{{institution_name}}_{{ favicon }}"
+    dest: "{{ full_theme_path }}/images/favicon.ico"
+
+
+- name: brand  |additional styles
+  template:
+    src: templates/style.css.j2
+    dest: "{{ full_theme_path }}/lib/css/style.css"
+
+
+- name: brand  | Institutional branding
+  become: yes 
+  command: "sed -i 's/DSpace/{{institution_name}}/g' messages.xml chdir={{dspace_install}}/webapps/xmlui/i18n "
+
+
+- name: brand  | Customize footer and header
+  template:
+    src: templates/page-structure.xsl.j2
+    dest: "{{ full_theme_path }}/lib/xsl/core/page-structure.xsl"
+
+
+- name: brand  | Customize body 
+  template:
+    src: templates/news-xmlui.xml.j2
+    dest: "/dspace/config/news-xmlui.xml"
+
+
+
+- name: "Change default URL"
+  lineinfile:
+    path: "/dspace/config/dspace.cfg"
+    regexp: "^dspace.baseUrl ="
+    insertafter: "^#dspace.baseUrl ="
+    line:  dspace.baseUrl = http://{{dspace_ip}}:8080
+
+#when: "{{ use_alt_theme }}"
+
+
+
+
+
