@@ -9,6 +9,7 @@
   tags: postgres
 
 - name: postgres | add dspace user
+  become: yes
   become_user: "{{ postgres_usr }}"
   postgresql_user: 
     name: "{{ dspace_db_user }}" 

@@ -1,9 +1,9 @@
 inventory_name:
     hosts:
-       196.249.68.166:
+       41.93.71.2:
           ansible_connection: ssh
-          ansible_user: tumarepository
+          ansible_user: nitadmin
           ansible_ssh_pass: 
-          ansible_sudo_pass: 10mbote80tembo
+          ansible_sudo_pass: NIT"789!
           ansible_become: yes
           ansible_become_method: sudo
