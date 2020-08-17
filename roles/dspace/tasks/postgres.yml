@@ -14,6 +14,9 @@
   postgresql_user: 
     name: "{{ dspace_db_user }}" 
     password: "{{ dspace_db_pass }}"
+    encrypted: yes
+    role_attr_flags : CREATEDB, SUPERUSER
+    state: present
   tags: postgres
 
 - name: postgres | add dspace database
@@ -23,7 +26,7 @@
 
 - name: postgres | configure md5 auth for dspace database
   become_user: "{{ postgres_usr }}"
-  template: src=templates/pg_hba.conf.j2 dest=/etc/postgresql/9.5/main/pg_hba.conf
+  template: src=templates/pg_hba.conf.j2 dest=/etc/postgresql/10/main/pg_hba.conf
   notify:
     - restart postgresql
   tags: postgres
