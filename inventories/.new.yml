@@ -1,9 +1,10 @@
 inventory_name:
     hosts:
-       41.93.71.2:
+       XX.XX.XX.XX:
           ansible_connection: ssh
-          ansible_user: nitadmin
+          ansible_user: USE
           ansible_ssh_pass: 
-          ansible_sudo_pass: NIT"789!
+          ansible_sudo_pass: PASS
           ansible_become: yes
           ansible_become_method: sudo
+         # ansible_port: 2321

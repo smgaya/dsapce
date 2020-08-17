@@ -98,8 +98,8 @@ ssl_certificate_path:       "/etc/ssl/certs"
 ssl_certificate_key_path:   "/etc/ssl/private"
 ssl_certificate_subj:       "/C=US/ST=Maryland/L=Baltimore/O=JHU/CN={{ domain }}"
 
-domain: nit.ac.tz
+domain: ifm.ac.tz
 app_hostname: dspace
-dspace_ip:  "41.93.71.2"
-institution_name: NIT
-institution_site: https://www.nit.ac.tz
+dspace_ip:  "192.168.7.231"
+institution_name: IFM
+institution_site: https://www.ifm.ac.tz
